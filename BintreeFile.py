@@ -14,10 +14,6 @@ class Bintree:
 
 
 class Node(object):
-    '''
-    Class that keeps pointers to the object to the left of it and the right of it
-    contains data that the user sets from functions outside the class.
-    '''
     def __init__(self):
         self.data = None
         self.right = None
@@ -50,8 +46,8 @@ def putta(root_object, value):
         else:
             putta(node.right, value)
 
-    #elif value.lower() == node.data.lower():
-        #pass
+    elif value.lower() == node.data.lower():
+        pass
     else:
         if node.left == None:
             new_node = Node()
